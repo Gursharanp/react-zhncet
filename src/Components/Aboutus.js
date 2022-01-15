@@ -1,6 +1,8 @@
 import React from 'react'
-import Nacbar from './Navbar';
+import Navbar from './Navbar';
 export default function About(){
    
-return <div> <Navbar/></div>  
+return <div> <Navbar/>
+About us 
+</div>  
 }
