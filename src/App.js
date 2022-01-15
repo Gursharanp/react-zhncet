@@ -3,7 +3,6 @@ import './style.css';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
 import AboutUs from './Components/Aboutus';
-import { render } from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -11,9 +10,9 @@ export default function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" elements={<Home />} />
-          <Route path="/Contact" elements={<Contact />} />
-          <Route path="/Aboutus" elements={<AboutUs />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Aboutus" element={<AboutUs />} />
         </Routes>
       </Router>
     </div>
